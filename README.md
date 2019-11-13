@@ -7,7 +7,7 @@ This consists of two parts
 * The Angular 8 responsive app which is FavoriteReceipesManagerFE
 * The spring boot Java application which is FavoriteReceipesManager
 
-##Installation requirements
+## Installation requirements
 The basic requirements to run this are:
 * That you have minimum Java 8 (jdk) installed on your computer
 * That you have maven 3.5 installed on your computer
@@ -15,7 +15,7 @@ The basic requirements to run this are:
 * That you have the angular cli package npm installed
 * Clone the repository into your local computer
 
-##Build instructions
+## Build instructions
 * Open two git bash terminals - one for the front end and one for backend
 * In the first bash, change the directory to FavoriteReceipesManager, this is the Java application
 * * Execute the command mvnw spring-boot:run => see that the spring boot application spins off
@@ -23,7 +23,7 @@ The basic requirements to run this are:
 * * Execute the command npm i => see that this installs all the dependency nodel modules
 * * Execute the command ng serve => see that the front end application spins off
 
-##Verify the working application
+## Verify the working application
 In order to make sure it works, here are the steps to follow:
 * Open a browser like chrome
 * Go to http://localhost:4200/ => see that the application loads
