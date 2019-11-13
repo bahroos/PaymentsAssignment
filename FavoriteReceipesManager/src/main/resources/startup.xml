@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Receipes>
+    <Receipe>
+        <title>"Chicken Curry"</title>
+        <cookingInstructions>"Cook for 30 min and add spices. This will be ready."</cookingInstructions>>
+        <vegetarian>false</vegetarian>
+        <ingredients>"Chicken 200 grms,Salt (1 teaspoon),Onions (3),Tomatoes (3),Chicken Curry Masala (2 teaspoon)"))
+        </ingredients>
+    </Receipe>
+</Receipes>

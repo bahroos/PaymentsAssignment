@@ -1,0 +1,31 @@
+<h2>Receipe Details</h2>
+
+<hr/>
+<div *ngIf="receipe">
+  <div>
+    <label><b>Title: </b></label> {{receipe.title}}
+  </div>
+  <div>
+    <label><b>DateTime: </b></label> {{receipe.dateTime}}
+  </div>
+  <div>
+    <label><b>Vegetarian</b></label> {{receipe.vegetarian}}
+  </div>
+  <div>
+    <label><b>Ingredients</b></label> {{receipe.ingredients}}
+  </div>
+  <div>
+    <label><b>CookingInstructions</b></label> {{receipe.cookingInstructions}}
+  </div>
+  <div>
+    <label><b>OptimalNoOfPeople</b></label> {{receipe.optimalNoOfPeople}}
+  </div>
+
+
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Receipe List</button><br>
+
+

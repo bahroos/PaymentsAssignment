@@ -1,0 +1,31 @@
+<h3>Update Receipe</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Title</label>
+      <input type="text" class="form-control" id="title" required [(ngModel)]="receipe.title" name="title">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Vegetarian</label>
+      <input type="text" class="form-control" id="vegetarian" required [(ngModel)]="receipe.vegetarian" name="vegetarian">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Ingredients</label>
+      <input type="text" class="form-control" id="ingredients" required [(ngModel)]="receipe.ingredients" name="ingredients">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Cooking Instructions</label>
+      <input type="text" class="form-control" id="cookinginstructions" required [(ngModel)]="receipe.cookinginstructions" name="cookinginstructions">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Optimal No Of People</label>
+      <input type="text" class="form-control" id="optimalnoofpeople" required [(ngModel)]="receipe.optimalnoofpeople" name="optimalnoofpeople">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

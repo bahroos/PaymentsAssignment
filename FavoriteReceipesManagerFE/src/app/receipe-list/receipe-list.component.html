@@ -1,0 +1,35 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Receipe List</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>DateTime</th>
+          <th>Vegetarian</th>
+          <th>Ingredients</th>
+          <th>CookingInstructions</th>
+          <th>OptimalNoOfPeople</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let receipe of receipes | async">
+          <td>{{receipe.title}}</td>
+          <td>{{receipe.dateTime}}</td>
+          <td>{{receipe.vegetarian}}</td>
+          <td>{{receipe.ingredients}}</td>
+          <td>{{receipe.cookingInstructions}}</td>
+          <td>{{receipe.optimalNoOfPeople}}</td>
+
+          <td><button (click)="deleteReceipe(receipe.id)" class="btn btn-danger">Delete</button>
+              <button (click)="updateReceipe(receipe.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+              <button (click)="receipeDetails(receipe.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
