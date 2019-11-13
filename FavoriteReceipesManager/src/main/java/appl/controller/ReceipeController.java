@@ -34,7 +34,7 @@ public class ReceipeController {
             @ApiResponse(code = 500, message = "Internal Server Error"),
     })
     @GetMapping(name = "/healthcheck", consumes = "application/json", produces = "application/json")
-    public ResponseEntity<String> test() {
+    public ResponseEntity<String> healthcheck() {
         return new ResponseEntity<>("Hi!!! My healthcheck works.", HttpStatus.OK);
     }
 
@@ -47,7 +47,7 @@ public class ReceipeController {
             @ApiResponse(code = 500, message = "Internal Server Error")
     })
     @GetMapping(value = "/receipes", consumes = "application/json", produces = "application/json")
-    public List<Receipe> all() {
+    public List<Receipe> allReceipes() {
         return (List<Receipe>) repository.findAll();
     }
 
