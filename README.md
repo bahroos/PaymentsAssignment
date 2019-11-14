@@ -28,6 +28,14 @@ In order to make sure it works, here are the steps to follow:
 * Open a browser like chrome
 * Go to http://localhost:4200/ => see that the application loads
 
+## Design considerations
+1. Annotation based Spring boot is used for the Web service creation.
+2. A in memory H2 embedded database is added to be able to perform the CRUD operations.
+3. The Web Layer is Unit testing using Spring’s MockMvc
+4. Integration tests are added to check the end to end response flows
+
+
+
 
 
 
