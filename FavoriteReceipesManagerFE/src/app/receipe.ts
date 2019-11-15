@@ -1,3 +1,5 @@
+import {FormGroup} from '@angular/forms';
+
 export class Receipe {
   id: number;
   title: string;
@@ -7,3 +9,5 @@ export class Receipe {
   cookingInstructions:string;
   optimalNoOfPeople: number;
 }
+
+
