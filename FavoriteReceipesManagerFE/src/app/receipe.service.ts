@@ -9,7 +9,7 @@ export class ReceipeService {
 
 
 
-  private baseUrl = 'http://localhost:8081/receipes';
+  private baseUrl = 'https://dhirajappservice01.azurewebsites.net/receipes';
 
   constructor(private http: HttpClient) { }
 
@@ -33,6 +33,7 @@ export class ReceipeService {
   }
 
   getReceipesList(): Observable<any> {
+    console.log("Calling get receipe list");
     return this.http.get(`${this.baseUrl}`,{ headers: new HttpHeaders({'Content-Type': 'application/json'})});
   }
 }

@@ -20,7 +20,7 @@ export class UpdateReceipeComponent implements OnInit {
     this.receipe = new Receipe();
 
     this.id = this.route.snapshot.params['id'];
-    
+
     this.receipeService.getReceipe(this.id)
       .subscribe(data => {
         console.log(data)
@@ -40,6 +40,6 @@ export class UpdateReceipeComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['/receipes']);
+    this.router.navigate(['https://dhirajappservice01.azurewebsites.net/receipes']);
   }
 }

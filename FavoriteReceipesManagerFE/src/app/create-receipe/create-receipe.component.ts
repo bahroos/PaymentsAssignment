@@ -33,10 +33,10 @@ export class CreateReceipeComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-    this.save();    
+    this.save();
   }
 
   gotoList() {
-    this.router.navigate(['/receipes']);
+    this.router.navigate(['receipes']);
   }
 }
