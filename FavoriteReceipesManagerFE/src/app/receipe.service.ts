@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 export class ReceipeService {
 
 
-
-  private baseUrl = 'https://dhirajappservice01.azurewebsites.net/receipes';
+  private baseUrl = 'http://localhost:8081/receipes';
+  //private baseUrl = 'https://dhirajappservice01.azurewebsites.net/receipes';
 
   constructor(private http: HttpClient) { }
 
